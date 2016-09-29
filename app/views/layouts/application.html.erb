@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DefioCo</title>
+    <title>Defio - Social Challenges</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,18 @@
   </head>
 
   <body>
+    <div class="container-fluid">
+       <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Defio</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>Log In</li>
+            <li>What is Defio?</li>
+            <li>Join the challenge</li>
+            </ul>
+        </div>
+      </nav>
+    </div>
     <%= yield %>
   </body>
 </html>
