@@ -14,13 +14,19 @@
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Defio</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li>Log In</li>
+            <% if user_signed_in? %>
+              <li>Hello, <%= current_user.username %></li>
+            <% else %>
+              <li>Log in</li>
+            <% end %>
             <li>What is Defio?</li>
             <li>Join the challenge</li>
           </ul>
         </div>
       </nav>
     </div>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

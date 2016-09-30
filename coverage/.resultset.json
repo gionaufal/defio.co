@@ -1,6 +1,19 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/gionaufal/defio.co/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/gionaufal/defio.co/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/home/gionaufal/defio.co/app/helpers/application_helper.rb": [
         1,
         null
@@ -14,12 +27,14 @@
       "/home/gionaufal/defio.co/app/controllers/application_controller.rb": [
         1,
         1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
         null
-      ],
-      "/home/gionaufal/defio.co/app/models/application_record.rb": [
-        0,
-        0,
-        0
       ],
       "/home/gionaufal/defio.co/app/channels/application_cable/channel.rb": [
         0,
@@ -44,6 +59,6 @@
         0
       ]
     },
-    "timestamp": 1475260418
+    "timestamp": 1475264402
   }
 }
