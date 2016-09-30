@@ -15,7 +15,9 @@
           <a href="#" class="brand-logo">Defio</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <% if user_signed_in? %>
-              <li>Hello, <%= current_user.username %></li>
+              <%= link_to "users/#{current_user.username}" do %>
+                <li>Hello, <%= current_user.username %></li>
+              <% end %>
             <% else %>
               <li>Log in</li>
             <% end %>
