@@ -17,7 +17,7 @@ feature 'User creates profile' do
     click_on 'Sign up'
 
     expect(page).to have_content user.username
-    expect(page).not_to have_content 'Log in'
+    expect(page).not_to have_content 'Login'
     expect(current_path).to eq root_path
   end
 end

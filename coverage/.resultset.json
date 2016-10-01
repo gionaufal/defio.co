@@ -22,8 +22,8 @@
       "/home/gionaufal/defio.co/app/controllers/home_controller.rb": [
         1,
         1,
-        5,
-        3,
+        8,
+        4,
         null,
         null,
         null
@@ -36,7 +36,7 @@
         1,
         null,
         1,
-        2,
+        7,
         null,
         null
       ],
@@ -107,6 +107,6 @@
         0
       ]
     },
-    "timestamp": 1475339704
+    "timestamp": 1475341777
   }
 }
