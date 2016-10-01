@@ -1,0 +1,6 @@
+<h2>New post</h2>
+<%= simple_form_for @post do |f| %>
+  <%= f.input :description, required: true %>
+  <%= f.input :image, as: :file, required: true %>
+  <%= f.button :submit, 'Create post'  %>
+<% end %>

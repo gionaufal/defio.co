@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :post do
-    description "MyString"
-    user nil
+    description 'Post description'
+    user
   end
 end

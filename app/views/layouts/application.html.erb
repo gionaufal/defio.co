@@ -12,12 +12,14 @@
     <div class="container-fluid">
        <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Defio</a>
+          <%= link_to 'Defio', root_path, class:'brand-logo'%>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <% if user_signed_in? %>
-              <%= link_to "users/#{current_user.username}" do %>
+              <%= link_to "../users/#{current_user.username}" do %>
                 <li>Hello, <%= current_user.username %></li>
               <% end %>
+              <li><%= link_to 'New post', new_post_path %></li>
+              <li><%= link_to 'Log out', destroy_user_session_path %></li>
             <% else %>
               <li>Log in</li>
             <% end %>
@@ -28,6 +30,15 @@
       </nav>
     </div>
     <div class="container">
+      <% if flash[:error] %>
+        <p><%= flash[:error] %></p>
+      <% end %>
+      <% if flash[:alert] %>
+        <p><%= flash[:alert] %></p>
+      <% end %>
+      <% if flash[:notice] %>
+        <p><%= flash[:notice] %></p>
+      <% end %>
       <%= yield %>
     </div>
   </body>
