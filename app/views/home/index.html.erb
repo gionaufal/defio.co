@@ -15,4 +15,10 @@
       <%= link_to 'Sign Up', new_user_registration_path, class:"waves-effect waves-light btn-large" %>
     </section>
   <% end %>
+  <% if @posts %>
+    <section class='posts row'>
+      <h5>Last posts</h5>
+      <%= render @posts %>
+    </section>
+  <% end %>
 </div>
