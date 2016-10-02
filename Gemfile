@@ -35,7 +35,7 @@ group :development do
   gem 'rubocop', require: false
 end
 
-groud :production do
+group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
