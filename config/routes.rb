@@ -3,5 +3,5 @@ Rails.application.routes.draw do
     root to: 'home#index'
   resources :users, only: [:show]
   get 'users/:username' => 'users#show'
-  resources :posts, only: [:new, :create, :show]
+  resources :posts, only: [:new, :create, :show, :destroy]
 end

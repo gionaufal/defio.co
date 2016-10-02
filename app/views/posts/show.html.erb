@@ -1,7 +1,14 @@
-<h5>Posted by <%= link_to @post.user.username, "../users/#{@post.user.username}" %></h5>
-<p><%= @post.created_at %></p>
-<div class="post_image">
-  <%= image_tag @post.image %>
-</div>
+<div class="row">
+  <h5>Posted by <%= link_to @post.user.username, "../users/#{@post.user.username}" %></h5>
+  <p><%= @post.created_at %></p>
+  <div class="post_image">
+    <%= image_tag @post.image %>
+  </div>
 
-<p><%= @post.description %></p>
+  <p><%= @post.description %></p>
+
+  <% if current_user.id == @post.user.id %>
+  <%= link_to 'Delete', @post,
+      method: :delete, class: 'waves-effect waves-light btn delete', data: { confirm: 'Are you sure?' } %>
+  <% end %>
+</div>
