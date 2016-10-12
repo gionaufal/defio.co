@@ -6,7 +6,9 @@ feature 'User signs in' do
 
     visit root_path
 
-    click_on 'Login'
+    within '.right' do
+      click_on 'Login'
+    end
 
     fill_in 'Email', with: user.email
     fill_in 'Password', with: user.password
@@ -20,8 +22,9 @@ feature 'User signs in' do
   scenario 'and must fill all fields' do
     visit root_path
 
-    click_on 'Login'
-
+    within '.right' do
+      click_on 'Login'
+    end
     click_on 'Sign in'
 
     expect(page).to have_content 'Invalid Email or password.'

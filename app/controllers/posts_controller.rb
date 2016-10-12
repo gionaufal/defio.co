@@ -12,7 +12,6 @@ class PostsController < ApplicationController
       flash[:error] = "Don't forget to upload the image!"
       render :new
     end
-
   end
 
   def show
