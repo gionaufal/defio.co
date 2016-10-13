@@ -1,24 +1,13 @@
-# README
+# Defio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Defio is a social challenge platform, where users can apply to a monthly challenge, post their accomplishments, keep track of their streaks and follow other users.
 
-Things you may want to cover:
+It's build with Rails 5, Devise, Paperclip, Simple Form and Materialize.
 
-* Ruby version
+## Next features
+* User streak
+* Other challenges
+* Follow
+* Domain
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+See it live [here!](http://defio.heroku.com)
