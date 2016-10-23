@@ -18,7 +18,7 @@ gem 'materialize-form'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails'
   gem 'capybara'
   gem 'factory_girl_rails'
   gem 'pry-byebug'
