@@ -1,7 +1,10 @@
 <% if @user %>
   <h5><%= @user.username %></h5>
-  <% if @user != current_user %>
-    <%= link_to 'follow' %>
+  <section class='stats'>
+    <%= render 'shared/stats' %>
+  </section>
+  <% if @user != current_user && user_signed_in? %>
+    <%= render 'follow_form' %>
   <% end %>
   <div class="row">
     <section class='posts'>

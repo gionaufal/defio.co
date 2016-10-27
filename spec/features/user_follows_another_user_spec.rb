@@ -8,7 +8,6 @@ feature 'User follows another user' do
     login_as(user)
 
     visit "/users/#{other_user.username}"
-
     click_on 'follow'
 
     expect(page).to have_content '1 follower'
